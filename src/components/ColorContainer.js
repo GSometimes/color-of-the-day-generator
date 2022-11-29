@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { colorOfTheDay } from '../data/data';
+import Button from './Button';
 
 // const random =
 //   colorOfTheDay[Math.floor(Math.random() * colorOfTheDay.length)].toUpperCase();
@@ -20,9 +21,10 @@ const ColorContainer = () => {
   return (
     <>
       <div style={{ backgroundColor: color }} className='container'>
-        <button style={{ color }} onClick={generateColor}>
+        {/* <button style={{ color }} onClick={generateColor}>
           {color}
-        </button>
+        </button> */}
+        <Button color={color} generateColor={generateColor} />
       </div>
     </>
   );
