@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { colorOfTheDay } from '../data/data';
-import Button from './Button';
+import { colorOfTheDay } from '../../data/data';
+import Button from '../Button/Button';
+import './style.css';
 
 // const random =
 //   colorOfTheDay[Math.floor(Math.random() * colorOfTheDay.length)].toUpperCase();

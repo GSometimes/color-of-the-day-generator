@@ -1,9 +1,11 @@
 import './App.css';
-import ColorContainer from './components/ColorContainer';
+import ColorContainer from './components/ColorContainer/ColorContainer';
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
   return (
     <div className='App'>
+      <Navbar />
       <ColorContainer />
     </div>
   );
