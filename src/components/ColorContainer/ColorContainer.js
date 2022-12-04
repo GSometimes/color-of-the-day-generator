@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { colorOfTheDay } from '../../data/data';
+import { colorOfTheDay } from '../../data/color-data';
 import Button from '../Button/Button';
 import './style.css';
 
