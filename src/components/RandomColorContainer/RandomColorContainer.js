@@ -7,7 +7,7 @@ import './style.css';
 //   colorOfTheDay[Math.floor(Math.random() * colorOfTheDay.length)].toUpperCase();
 // console.log(random);
 
-const ColorContainer = () => {
+const RandomColorContainer = () => {
   const [color, setColor] = useState(colorOfTheDay[0]);
 
   const generateColor = () => {
@@ -31,4 +31,4 @@ const ColorContainer = () => {
   );
 };
 
-export default ColorContainer;
+export default RandomColorContainer;

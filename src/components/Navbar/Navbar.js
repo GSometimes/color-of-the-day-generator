@@ -6,20 +6,18 @@ import './style.css';
 const Navbar = () => {
   return (
     <>
-      {/* {navLinks.map((link, index) => {
-        return (
-          <div className='nav-container'>
-            <span key={index} className='logo'>
-              <Link to={link.path}>{link.title}</Link>
-            </span>
-            <ul className='nav-links'>
-              <li key={index}>
-                <Link to={link.path}></Link>
+      <div className='nav-container'>
+        <span className='logo'>Color of the Day.</span>
+        <ul className='nav-links'>
+          {navLinks.map((link) => {
+            return (
+              <li key={link.id}>
+                <Link to={link.path}>{link.title}</Link>
               </li>
-            </ul>
-          </div>
-        );
-      })} */}
+            );
+          })}
+        </ul>
+      </div>
     </>
   );
 };
