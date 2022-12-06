@@ -1,30 +1,23 @@
-import React, { useState } from 'react';
-import { colorOfTheDay } from '../../data/color-data';
+// import React, { useState } from 'react';
+// import { colorOfTheDay } from '../../data/color-data';
 import Button from '../Button/Button';
 import './style.css';
 
-// const random =
-//   colorOfTheDay[Math.floor(Math.random() * colorOfTheDay.length)].toUpperCase();
-// console.log(random);
+const RandomColorContainer = ({ color, generateColor }) => {
+  // const [color, setColor] = useState(colorOfTheDay[0]);
 
-const RandomColorContainer = () => {
-  const [color, setColor] = useState(colorOfTheDay[0]);
+  // const generateColor = () => {
+  //   const random =
+  //     colorOfTheDay[
+  //       Math.floor(Math.random() * colorOfTheDay.length)
+  //     ].toUpperCase();
 
-  const generateColor = () => {
-    const random =
-      colorOfTheDay[
-        Math.floor(Math.random() * colorOfTheDay.length)
-      ].toUpperCase();
-
-    setColor(random);
-  };
+  //   setColor(random);
+  // };
 
   return (
     <>
-      <div style={{ backgroundColor: color }} className='container'>
-        {/* <button style={{ color }} onClick={generateColor}>
-          {color}
-        </button> */}
+      <div style={{ backgroundColor: color }} className='random-container'>
         <Button color={color} generateColor={generateColor} />
       </div>
     </>
