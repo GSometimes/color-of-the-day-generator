@@ -12,8 +12,15 @@
 .card-wrapper {
   height: 300px;
   width: 250px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  border: 5px solid #0a0908;
   margin: 0 auto;
+  overflow: hidden;
+  transition: all 0.25s ease-in-out;
+}
+
+.card-wrapper:hover {
+  box-shadow: none;
 }
 
 .color {
@@ -26,4 +33,5 @@
   align-items: center;
   justify-content: center;
   font-weight: 700;
+  outline: 5px solid #0a0908;
 }

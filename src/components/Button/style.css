@@ -2,8 +2,13 @@ button {
   padding: 20px;
   font-size: 2rem;
   background-color: #fff;
-  border-radius: 15px;
+  /* border-radius: 15px; */
   cursor: pointer;
-  border: 5px solid #000;
+  border: 5px solid #0a0908;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
   transition: all 0.25s ease-in-out;
+}
+
+button:hover {
+  box-shadow: none;
 }

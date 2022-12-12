@@ -5,12 +5,12 @@ import { colorOfTheDay } from '../../data/color-data';
 const AllColorsContainer = () => {
   return (
     <div className='all-container'>
-      {colorOfTheDay.map((item) => {
+      {colorOfTheDay.map((item, index) => {
         return (
-          <div className='card-wrapper'>
+          <div key={index} className='card-wrapper'>
             <div style={{ backgroundColor: item }} className='color'></div>
-            <div style={{ color: item }} className='card-text'>
-              {item}
+            <div className='card-text'>
+              {`Day ${index + 1}`}: {item}
             </div>
           </div>
         );

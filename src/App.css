@@ -1,11 +1,9 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: 'Nerko One', cursive; */
   font-family: 'Patrick Hand', cursive;
 }
 
@@ -14,5 +12,5 @@
 }
 
 body {
-  background-color: #f5f5f5;
+  background-color: #f2f4f3;
 }
