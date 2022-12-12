@@ -29,12 +29,7 @@ function App() {
             <RandomColorContainer color={color} generateColor={generateColor} />
           }
         />
-        <Route
-          path='all-colors'
-          element={
-            <AllColorsContainer color={color} generateColor={generateColor} />
-          }
-        />
+        <Route path='all-colors' element={<AllColorsContainer />} />
       </Routes>
     </div>
   );

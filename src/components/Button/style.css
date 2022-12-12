@@ -5,4 +5,5 @@ button {
   border-radius: 15px;
   cursor: pointer;
   border: 5px solid #000;
+  transition: all 0.25s ease-in-out;
 }
