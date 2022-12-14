@@ -3,7 +3,7 @@ import './style.css';
 
 const ColorButton = ({ color, generateColor }) => {
   return (
-    <button class='color-button' style={{ color }} onClick={generateColor}>
+    <button className='color-button' style={{ color }} onClick={generateColor}>
       {color}
     </button>
   );
