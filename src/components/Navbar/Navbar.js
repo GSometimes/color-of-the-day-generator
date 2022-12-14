@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <>
       <div className='nav-container'>
-        <span className='logo'>Color of the Day.</span>
+        <span className='logo'>Color of the Day</span>
         <ul className='nav-links'>
           {navLinks.map((link) => {
             return (
