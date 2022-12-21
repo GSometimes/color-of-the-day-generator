@@ -14,3 +14,4 @@ export const navLinks = [
     path: '/all-colors',
   },
 ];
+
