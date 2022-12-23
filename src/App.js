@@ -18,6 +18,11 @@ function App() {
 
     setColor(random);
   };
+
+  const copyColor = () => {
+    navigator.clipboard.writeText(`${color}`);
+  };
+
   return (
     <div className='App'>
       <Navbar />
@@ -26,7 +31,11 @@ function App() {
         <Route
           path='random-color'
           element={
-            <RandomColorContainer color={color} generateColor={generateColor} />
+            <RandomColorContainer
+              color={color}
+              generateColor={generateColor}
+              copyColor={copyColor}
+            />
           }
         />
         <Route path='all-colors' element={<AllColorsContainer />} />

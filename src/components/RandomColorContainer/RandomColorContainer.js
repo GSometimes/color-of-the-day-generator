@@ -1,10 +1,11 @@
 // import React, { useState } from 'react';
 // import { colorOfTheDay } from '../../data/color-data';
-import ColorButton from '../ColorButton/ColorButton';
-import CopyButton from '../CopyButton/CopyButton';
+import Button from '../Button/Button';
+// import ColorButton from '../ColorButton/ColorButton';
+// import CopyButton from '../CopyButton/CopyButton';
 import './style.css';
 
-const RandomColorContainer = ({ color, generateColor }) => {
+const RandomColorContainer = ({ color, generateColor, copyColor }) => {
   // const [color, setColor] = useState(colorOfTheDay[0]);
 
   // const generateColor = () => {
@@ -19,8 +20,25 @@ const RandomColorContainer = ({ color, generateColor }) => {
   return (
     <>
       <div style={{ backgroundColor: color }} className='random-container'>
-        <ColorButton color={color} generateColor={generateColor} />
-        <CopyButton color={color} />
+        {/* <button
+          className='color-button'
+          style={{ color }}
+          onClick={generateColor}
+          >
+          {color}
+          </button>
+          <button
+          onClick={() => {
+            navigator.clipboard.writeText(`${color}`);
+          }}
+          className='copy-button'
+          >
+          Pick Me!
+        </button> */}
+        {/* <ColorButton color={color} generateColor={generateColor} />
+        <CopyButton color={color} /> */}
+        <Button text={color} testMethod={generateColor} />
+        <Button text={'Pick Me!'} testMethod={copyColor} />
       </div>
     </>
   );
