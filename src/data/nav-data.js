@@ -1,17 +1,17 @@
 export const navLinks = [
-  // {
-  //   title: 'Color of The Day.',
-  //   path: '/',
-  // },
   {
     id: 1,
+    title: 'Home',
+    path: '/',
+  },
+  {
+    id: 2,
     title: 'Random Color',
     path: '/random-color',
   },
   {
-    id: 2,
+    id: 3,
     title: 'All Colors',
     path: '/all-colors',
   },
 ];
-

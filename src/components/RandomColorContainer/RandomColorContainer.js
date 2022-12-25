@@ -37,8 +37,11 @@ const RandomColorContainer = ({ color, generateColor, copyColor }) => {
         </button> */}
         {/* <ColorButton color={color} generateColor={generateColor} />
         <CopyButton color={color} /> */}
-        <Button text={color} testMethod={generateColor} />
-        <Button text={'Pick Me!'} testMethod={copyColor} />
+        <Button
+          text={color}
+          passFunc={generateColor}
+        />
+        <Button text={'Pick Me!'} passFunc={copyColor} />
       </div>
     </>
   );

@@ -3,7 +3,12 @@ import './style.css';
 
 const Button = (props) => {
   return (
-    <button onClick={props.testMethod} className='button' type='button'>
+    <button
+      // style={props}
+      onClick={props.passFunc}
+      className='button'
+      type='button'
+    >
       {props.text}
     </button>
   );
