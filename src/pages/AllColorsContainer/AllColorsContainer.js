@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 import { colorOfTheDay } from '../../data/color-data';
-import Card from '../Card/Card';
+import Card from '../../components/Card/Card.js';
 
 const AllColorsContainer = () => {
   return (

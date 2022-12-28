@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import RandomColorContainer from './components/RandomColorContainer/RandomColorContainer';
+import RandomColorContainer from './pages/RandomColorContainer/RandomColorContainer';
 import Navbar from './components/Navbar/Navbar';
-import AllColorsContainer from './components/AllColorsContainer/AllColorsContainer';
+import AllColorsContainer from './pages/AllColorsContainer/AllColorsContainer';
 
 import { colorOfTheDay } from './data/color-data';
 
@@ -24,9 +24,8 @@ function App() {
   };
 
   return (
-    <div className='App'>
+    <>
       <Navbar />
-      {/* <RandomColorContainer /> */}
       <Routes>
         <Route
           path='random-color'
@@ -40,7 +39,7 @@ function App() {
         />
         <Route path='all-colors' element={<AllColorsContainer />} />
       </Routes>
-    </div>
+    </>
   );
 }
 

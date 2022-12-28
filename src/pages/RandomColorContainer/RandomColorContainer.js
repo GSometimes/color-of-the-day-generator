@@ -1,6 +1,6 @@
 // import React, { useState } from 'react';
 // import { colorOfTheDay } from '../../data/color-data';
-import Button from '../Button/Button';
+import Button from '../../components/Button/Button.js';
 // import ColorButton from '../ColorButton/ColorButton';
 // import CopyButton from '../CopyButton/CopyButton';
 import './style.css';
@@ -37,10 +37,7 @@ const RandomColorContainer = ({ color, generateColor, copyColor }) => {
         </button> */}
         {/* <ColorButton color={color} generateColor={generateColor} />
         <CopyButton color={color} /> */}
-        <Button
-          text={color}
-          passFunc={generateColor}
-        />
+        <Button text={color} passFunc={generateColor} />
         <Button text={'Pick Me!'} passFunc={copyColor} />
       </div>
     </>

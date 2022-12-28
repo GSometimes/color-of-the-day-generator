@@ -4,10 +4,13 @@ import { Link } from 'react-router-dom';
 import './style.css';
 
 const Navbar = () => {
+  // const [scrollShadow]
   return (
     <>
       <div className='nav-container'>
-        <span className='logo'>Color of the Day</span>
+        <span className='logo'>
+          <Link to='/'>Color of the Day</Link>
+        </span>
         <ul className='nav-links'>
           {navLinks.map((link) => {
             return (
